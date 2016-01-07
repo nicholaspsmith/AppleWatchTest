@@ -39,27 +39,32 @@
                     <items>
                         <label alignment="left" text="Monday" id="D5P-M2-BHo"/>
                         <separator alignment="left" id="Fzn-hj-QdT"/>
-                        <label alignment="left" text="Movement" id="JLu-HI-oDx"/>
                         <table alignment="left" id="VY2-RT-LJb">
                             <items>
                                 <tableRow identifier="MovementRow" id="y4p-OH-EMl" customClass="MovementRow" customModule="WatchTest_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="qoT-kA-wQG">
+                                    <group key="rootItem" width="1" height="54.5" alignment="left" animationDuration="2" layout="vertical" id="qoT-kA-wQG">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" text="285" id="EOQ-ud-qLi"/>
-                                            <separator alignment="center" verticalAlignment="center" id="Lq1-9E-CIx"/>
-                                            <label alignment="center" verticalAlignment="center" text="x1" id="JAe-uf-xx4"/>
+                                            <label alignment="left" text="Movement" id="yXw-Jk-iXo"/>
+                                            <separator alignment="left" id="hk7-dl-SbU"/>
+                                            <group width="1" alignment="left" id="iTY-GN-KDp">
+                                                <items>
+                                                    <label alignment="left" text="Weight" id="O2W-Bk-bsW"/>
+                                                    <separator alignment="left" id="3Gc-Wi-bde"/>
+                                                    <label alignment="left" text="Reps" id="qkX-aw-Tnz"/>
+                                                </items>
+                                            </group>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="repsLbl" destination="JAe-uf-xx4" id="RM1-rI-nFQ"/>
-                                        <outlet property="weightLbl" destination="EOQ-ud-qLi" id="qhd-Bm-xi4"/>
+                                        <outlet property="movementLabel" destination="yXw-Jk-iXo" id="RSH-xw-K7W"/>
+                                        <outlet property="repsLbl" destination="qkX-aw-Tnz" id="mMu-7z-qcF"/>
+                                        <outlet property="weightLbl" destination="O2W-Bk-bsW" id="PaP-0N-Sq3"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
-                        <outlet property="movementLabel" destination="JLu-HI-oDx" id="QdO-Ng-ZV6"/>
                         <outlet property="movementTable" destination="VY2-RT-LJb" id="bje-wQ-pI9"/>
                         <outlet property="zoomDayLabel" destination="D5P-M2-BHo" id="DgN-QV-4Qk"/>
                     </connections>

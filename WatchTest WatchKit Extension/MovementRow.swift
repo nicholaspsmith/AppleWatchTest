@@ -11,6 +11,7 @@ import WatchKit
 
 class MovementRow: NSObject {
     
+    @IBOutlet var movementLabel: WKInterfaceLabel!
     @IBOutlet var weightLbl: WKInterfaceLabel!
     @IBOutlet var repsLbl: WKInterfaceLabel!
     

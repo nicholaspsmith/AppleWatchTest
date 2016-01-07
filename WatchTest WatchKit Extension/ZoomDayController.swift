@@ -22,25 +22,29 @@ class ZoomDayController: WKInterfaceController {
             ["Movement2": [[10:"x5"],[40:"x3"],[80:"x1+"]]]
         ]
     ]
+    
+    var abs:[[String: [String] ] ] = [
+        ["Hanging Leg Raise": ["x12",  "x12", "x12", "x12", "x10", "x10", "x8", "x6", "x4"]],
+        ["Barbell landmine":  ["x20", "x20", "x16", "x16", "x12", "x12", "x10", "x10", "x5"]],
+        ["Crunch":  ["x18", "x18", "x16", "x16", "x15", "x15", "x12", "x12", "x10"]],
+        ["Plank": ["1min", "1min", "50s", "45s", "40s", "30s", "25s", "20s", "20s"]]
+    ]
 
     @IBOutlet var zoomDayLabel: WKInterfaceLabel!
     @IBOutlet var movementTable: WKInterfaceTable!
-    @IBOutlet var movementLabel: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        var currentMovementIndex: UInt? = 0
 
         let dayName = context as! String
         
         self.zoomDayLabel.setText(dayName)
         
-        let workout = getWorkout(dayName, currIndex: currentMovementIndex!)
+        let numRows = getSimpleWorkout()
         
-        self.movementLabel.setText(workout.movement)
-//        self.movementLabel.setText(workout.weight)
-//        self.movementLabel.setText(workout.reps)
+        self.movementTable.setNumberOfRows(numRows, withRowType: "MovementRow")
+        
+        setRowLabels()
     }
     
     func getWorkout(day:String, currIndex:UInt) -> (movement:String, weight:String, reps:String) {
@@ -50,5 +54,35 @@ class ZoomDayController: WKInterfaceController {
 
         return (movement!, String(weight), reps!)
     }
+    
+    func getSimpleWorkout() -> Int {
+        var total = 0;
+        for var i = 0; i < abs.count; i++ {
+            let movement = abs[i].keys.first
+            let routine = abs[i][movement!]
+            for var j = 0; j < routine!.count; j++ {
+                total++;
+            }
+        }
+        return total;
+    }
+    
+    func setRowLabels() {
+        for var i = 0; i < abs.count; i++ {
+            let movement = abs[i].keys.first
+            let routine = abs[i][movement!]
+            for var j = 0; j < routine!.count; j++ {
+                let bigIndex = j + (i * abs[i][movement!]!.count)
+                let row = self.movementTable.rowControllerAtIndex(bigIndex) as! MovementRow
+                row.movementLabel.setText(movement)
+                let reps = routine![j]
+                row.repsLbl.setText(reps)
+            }
+        }
+
+    }
+
+    
+    
 
 }
