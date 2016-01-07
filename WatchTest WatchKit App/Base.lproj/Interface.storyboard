@@ -25,13 +25,19 @@
                             </items>
                         </table>
                     </items>
-                    <color key="backgroundColor" red="0.1380193361" green="0.2324150673" blue="0.25891729800000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="table" destination="yb6-b7-AYj" id="IhQ-7t-lns"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--ZoomDayController-->
+        <scene sceneID="9xw-ln-eaA">
+            <objects>
+                <controller identifier="ZoomDayController" id="wmL-ML-Lke"/>
+            </objects>
+            <point key="canvasLocation" x="429" y="346"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
