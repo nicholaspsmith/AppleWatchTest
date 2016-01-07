@@ -20,6 +20,7 @@
 		0173C4441C3DD29200E980A1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C4431C3DD29200E980A1 /* ExtensionDelegate.swift */; };
 		0173C4461C3DD29200E980A1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C4451C3DD29200E980A1 /* NotificationController.swift */; };
 		0173C4481C3DD29200E980A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0173C4471C3DD29200E980A1 /* Assets.xcassets */; };
+		0173C4581C3DDFA800E980A1 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C4571C3DDFA800E980A1 /* TableRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		0173C4451C3DD29200E980A1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		0173C4471C3DD29200E980A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0173C4491C3DD29200E980A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0173C4571C3DDFA800E980A1 /* TableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				0173C4411C3DD29200E980A1 /* InterfaceController.swift */,
+				0173C4571C3DDFA800E980A1 /* TableRow.swift */,
 				0173C4431C3DD29200E980A1 /* ExtensionDelegate.swift */,
 				0173C4451C3DD29200E980A1 /* NotificationController.swift */,
 				0173C4471C3DD29200E980A1 /* Assets.xcassets */,
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0173C4461C3DD29200E980A1 /* NotificationController.swift in Sources */,
+				0173C4581C3DDFA800E980A1 /* TableRow.swift in Sources */,
 				0173C4441C3DD29200E980A1 /* ExtensionDelegate.swift in Sources */,
 				0173C4421C3DD29200E980A1 /* InterfaceController.swift in Sources */,
 			);
