@@ -12,7 +12,7 @@
                     <items>
                         <table alignment="left" id="yb6-b7-AYj">
                             <items>
-                                <tableRow id="ZMB-Tr-TpA" customClass="TableRow" customModule="WatchTest_WatchKit_Extension">
+                                <tableRow identifier="TableRow" id="ZMB-Tr-TpA" customClass="TableRow" customModule="WatchTest_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="h9d-vz-Rfb">
                                         <items>
                                             <label alignment="left" text="Monday 💪🏼" id="ebf-9e-G8Q"/>

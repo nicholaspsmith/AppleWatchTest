@@ -17,6 +17,6 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        self.table.setNumberOfRows(3, withRowType: "type")
+        self.table.setNumberOfRows(9, withRowType: "TableRow")
     }
 }
