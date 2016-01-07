@@ -35,7 +35,15 @@
         <!--ZoomDayController-->
         <scene sceneID="9xw-ln-eaA">
             <objects>
-                <controller identifier="ZoomDayController" id="wmL-ML-Lke"/>
+                <controller identifier="ZoomDayController" id="wmL-ML-Lke" customClass="ZoomDayController" customModule="WatchTest_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="D5P-M2-BHo"/>
+                        <label alignment="left" text="Label" id="dqa-eD-iMC"/>
+                    </items>
+                    <connections>
+                        <outlet property="zoomDayLabel" destination="D5P-M2-BHo" id="DgN-QV-4Qk"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="429" y="346"/>
         </scene>

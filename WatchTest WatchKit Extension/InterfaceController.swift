@@ -29,7 +29,6 @@ class InterfaceController: WKInterfaceController {
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         let day = dayLabels[rowIndex]
-        self.pushControllerWithName("ZoomDayController", context: nil)
-        print(day)
+        self.pushControllerWithName("ZoomDayController", context: day)
     }
 }
