@@ -22,6 +22,7 @@
 		0173C4481C3DD29200E980A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0173C4471C3DD29200E980A1 /* Assets.xcassets */; };
 		0173C4581C3DDFA800E980A1 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C4571C3DDFA800E980A1 /* TableRow.swift */; };
 		0173C45A1C3DE85800E980A1 /* ZoomDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C4591C3DE85800E980A1 /* ZoomDayController.swift */; };
+		0173C45C1C3DED4E00E980A1 /* MovementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C45B1C3DED4E00E980A1 /* MovementRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		0173C4491C3DD29200E980A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0173C4571C3DDFA800E980A1 /* TableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
 		0173C4591C3DE85800E980A1 /* ZoomDayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomDayController.swift; sourceTree = "<group>"; };
+		0173C45B1C3DED4E00E980A1 /* MovementRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				0173C4411C3DD29200E980A1 /* InterfaceController.swift */,
 				0173C4571C3DDFA800E980A1 /* TableRow.swift */,
 				0173C4591C3DE85800E980A1 /* ZoomDayController.swift */,
+				0173C45B1C3DED4E00E980A1 /* MovementRow.swift */,
 				0173C4431C3DD29200E980A1 /* ExtensionDelegate.swift */,
 				0173C4451C3DD29200E980A1 /* NotificationController.swift */,
 				0173C4471C3DD29200E980A1 /* Assets.xcassets */,
@@ -317,6 +320,7 @@
 				0173C45A1C3DE85800E980A1 /* ZoomDayController.swift in Sources */,
 				0173C4461C3DD29200E980A1 /* NotificationController.swift in Sources */,
 				0173C4581C3DDFA800E980A1 /* TableRow.swift in Sources */,
+				0173C45C1C3DED4E00E980A1 /* MovementRow.swift in Sources */,
 				0173C4441C3DD29200E980A1 /* ExtensionDelegate.swift in Sources */,
 				0173C4421C3DD29200E980A1 /* InterfaceController.swift in Sources */,
 			);

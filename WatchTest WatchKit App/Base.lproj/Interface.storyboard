@@ -37,10 +37,30 @@
             <objects>
                 <controller identifier="ZoomDayController" id="wmL-ML-Lke" customClass="ZoomDayController" customModule="WatchTest_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Label" id="D5P-M2-BHo"/>
-                        <label alignment="left" text="Label" id="dqa-eD-iMC"/>
+                        <label alignment="left" text="Monday" id="D5P-M2-BHo"/>
+                        <separator alignment="left" id="Fzn-hj-QdT"/>
+                        <label alignment="left" text="Movement" id="JLu-HI-oDx"/>
+                        <table alignment="left" id="VY2-RT-LJb">
+                            <items>
+                                <tableRow identifier="MovementRow" id="y4p-OH-EMl" customClass="MovementRow" customModule="WatchTest_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="qoT-kA-wQG">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="285" id="EOQ-ud-qLi"/>
+                                            <separator alignment="center" verticalAlignment="center" id="Lq1-9E-CIx"/>
+                                            <label alignment="center" verticalAlignment="center" text="x1" id="JAe-uf-xx4"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="repsLbl" destination="JAe-uf-xx4" id="RM1-rI-nFQ"/>
+                                        <outlet property="weightLbl" destination="EOQ-ud-qLi" id="qhd-Bm-xi4"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                     <connections>
+                        <outlet property="movementLabel" destination="JLu-HI-oDx" id="QdO-Ng-ZV6"/>
+                        <outlet property="movementTable" destination="VY2-RT-LJb" id="bje-wQ-pI9"/>
                         <outlet property="zoomDayLabel" destination="D5P-M2-BHo" id="DgN-QV-4Qk"/>
                     </connections>
                 </controller>
