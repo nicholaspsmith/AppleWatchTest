@@ -23,12 +23,13 @@ class ZoomDayController: WKInterfaceController {
         ]
     ]
     
-    var abs:[[String: [String] ] ] = [
-        ["Hanging Leg Raise": ["x12",  "x12", "x12", "x12", "x10", "x10", "x8", "x6", "x4"]],
-        ["Barbell landmine":  ["x20", "x20", "x16", "x16", "x12", "x12", "x10", "x10", "x5"]],
-        ["Crunch":  ["x18", "x18", "x16", "x16", "x15", "x15", "x12", "x12", "x10"]],
-        ["Plank": ["1min", "1min", "50s", "45s", "40s", "30s", "25s", "20s", "20s"]]
+    var abs: [[String:[[String]]]] = [
+        ["Hanging Leg Raise": [["body","x12"], ["body","x12"], ["body","x12"], ["body","x12"], ["body","x10"], ["body","x10"], ["body","x8"],  ["body","x6"],  ["body","x4"]]],
+        ["Barbell landmine":   [["body","x20"], ["body","x20"], ["body","x16"], ["body","x16"], ["body","x12"], ["body","x12"], ["body","x10"], ["body","x10"], ["body","x5"]]],
+        ["Crunch":             [["body","x18"], ["body","x18"], ["body","x16"], ["body","x16"], ["body","x15"], ["body","x15"], ["body","x12"], ["body","x12"], ["body","x10"]]],
+        ["Plank":              [["body","1min"],["body","1min"],["body","50s"], ["body","45s"], ["body","40s"], ["body","30s"], ["body","25s"], ["body","20s"], ["body","20s"]]]
     ]
+
 
     @IBOutlet var zoomDayLabel: WKInterfaceLabel!
     @IBOutlet var movementTable: WKInterfaceTable!
@@ -75,7 +76,9 @@ class ZoomDayController: WKInterfaceController {
                 let bigIndex = j + (i * abs[i][movement!]!.count)
                 let row = self.movementTable.rowControllerAtIndex(bigIndex) as! MovementRow
                 row.movementLabel.setText(movement)
-                let reps = routine![j]
+                let weight = routine![j][0]
+                row.weightLbl.setText(weight)
+                let reps = routine![j][1]
                 row.repsLbl.setText(reps)
             }
         }
