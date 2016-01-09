@@ -41,11 +41,15 @@ class ZoomDayController: WKInterfaceController {
         
         self.zoomDayLabel.setText(dayName)
         
-        let numRows = getSimpleWorkout()
         
-        self.movementTable.setNumberOfRows(numRows, withRowType: "MovementRow")
-        
-        setRowLabels()
+        if dayName == "Saturday" {
+            let numRows = getSimpleWorkout()
+            
+            self.movementTable.setNumberOfRows(numRows, withRowType: "MovementRow")
+            
+            setRowLabels()
+        }
+
     }
     
     func getWorkout(day:String, currIndex:UInt) -> (movement:String, weight:String, reps:String) {
