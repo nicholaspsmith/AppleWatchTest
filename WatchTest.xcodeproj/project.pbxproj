@@ -23,6 +23,8 @@
 		0173C4581C3DDFA800E980A1 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C4571C3DDFA800E980A1 /* TableRow.swift */; };
 		0173C45A1C3DE85800E980A1 /* ZoomDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C4591C3DE85800E980A1 /* ZoomDayController.swift */; };
 		0173C45C1C3DED4E00E980A1 /* MovementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173C45B1C3DED4E00E980A1 /* MovementRow.swift */; };
+		01E20D341C5EAD9F009BD168 /* DaysIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E20D331C5EAD9F009BD168 /* DaysIC.swift */; };
+		01E20D361C5EAF8E009BD168 /* PickerIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E20D351C5EAF8E009BD168 /* PickerIC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		0173C4571C3DDFA800E980A1 /* TableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
 		0173C4591C3DE85800E980A1 /* ZoomDayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomDayController.swift; sourceTree = "<group>"; };
 		0173C45B1C3DED4E00E980A1 /* MovementRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementRow.swift; sourceTree = "<group>"; };
+		01E20D331C5EAD9F009BD168 /* DaysIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysIC.swift; sourceTree = "<group>"; };
+		01E20D351C5EAF8E009BD168 /* PickerIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerIC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0173C4411C3DD29200E980A1 /* InterfaceController.swift */,
+				01E20D331C5EAD9F009BD168 /* DaysIC.swift */,
 				0173C4571C3DDFA800E980A1 /* TableRow.swift */,
 				0173C4591C3DE85800E980A1 /* ZoomDayController.swift */,
 				0173C45B1C3DED4E00E980A1 /* MovementRow.swift */,
@@ -164,6 +169,7 @@
 				0173C4471C3DD29200E980A1 /* Assets.xcassets */,
 				0173C4491C3DD29200E980A1 /* Info.plist */,
 				0173C43F1C3DD29200E980A1 /* Supporting Files */,
+				01E20D351C5EAF8E009BD168 /* PickerIC.swift */,
 			);
 			path = "WatchTest WatchKit Extension";
 			sourceTree = "<group>";
@@ -321,8 +327,10 @@
 				0173C45A1C3DE85800E980A1 /* ZoomDayController.swift in Sources */,
 				0173C4461C3DD29200E980A1 /* NotificationController.swift in Sources */,
 				0173C4581C3DDFA800E980A1 /* TableRow.swift in Sources */,
+				01E20D361C5EAF8E009BD168 /* PickerIC.swift in Sources */,
 				0173C45C1C3DED4E00E980A1 /* MovementRow.swift in Sources */,
 				0173C4441C3DD29200E980A1 /* ExtensionDelegate.swift in Sources */,
+				01E20D341C5EAD9F009BD168 /* DaysIC.swift in Sources */,
 				0173C4421C3DD29200E980A1 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +568,7 @@
 				0173C44E1C3DD29200E980A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0173C4501C3DD29200E980A1 /* Build configuration list for PBXNativeTarget "WatchTest WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +577,7 @@
 				0173C4521C3DD29200E980A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0173C4541C3DD29200E980A1 /* Build configuration list for PBXNativeTarget "WatchTest" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +586,7 @@
 				0173C4561C3DD29200E980A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
