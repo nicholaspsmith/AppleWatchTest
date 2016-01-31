@@ -90,6 +90,8 @@ class ZoomDayController: WKInterfaceController {
     }
 
     
-    
+    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+        self.movementTable.removeRowsAtIndexes(NSIndexSet(index: Int(rowIndex.value)))
+    }
 
 }
